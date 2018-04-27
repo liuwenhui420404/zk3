@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/less/index.css">
+    <link rel="stylesheet" href="./static/less/swiper-3.4.2.min.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 10 + 'px'
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <a href="./static/page/sousuo.html"><input type="text" placeholder="小米MIX 2S"></a>
+            <span>◎</span>
+        </header>
+        <section>
+            <div class="banner">
+                <div class="swiper-container ctn">
+                    <div class="ban swiper-wrapper">
+                        <script type="text/x-handlebars-template" id="banner-tpl">
+                            {{#each data}}
+                            <div class="swiper-slide"><img src="{{img}}" alt=""></div>
+                            {{/each}}
+                        </script>
+                        <!-- <div class="swiper-slide"><img src="./static/imgs/banner1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./static/imgs/banner2.png" alt=""></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <dl>
+                    <dt><img src="./static/imgs/img1.png" alt=""></dt>
+                    <dd>活动频道</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./static/imgs/img2.png" alt=""></dt>
+                    <dd>活动频道</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./static/imgs/img3.png" alt=""></dt>
+                    <dd>活动频道</dd>
+                </dl>
+                <dl>
+                    <dt><img src="./static/imgs/img4.png" alt=""></dt>
+                    <dd>活动频道</dd>
+                </dl>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="./static/page/second.html">分享</a></li>
+                <li><a href="./static/page/three.html">发现</a></li>
+                <li><a href="./static/page/four.html">购物车</a></li>
+                <li><a href="./static/page/four.html">我的</a></li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+<script src="./static/js/lib/require.js"></script>
+<script>
+    require(['./static/js/config'], function() {
+        require(['main'])
+    })
+</script>
+
+</html>
